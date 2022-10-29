@@ -21,13 +21,6 @@ con <- dbConnect(
   port = Sys.getenv("PGPORT")
 )
 
-# con <- dbConnect(RPostgres::Postgres(),
-#                  dbname= 'analysis',
-#                  host= 'localhost',
-#                  port= 5432,
-#                  user= 'postgres',
-#                  password ='Lgrch845lngy$')
-
 dbExecute(con,
           "CREATE TABLE IF NOT EXISTS activities (
             id SERIAL PRIMARY KEY,
