@@ -39,6 +39,6 @@ while (TRUE) {
             params = resp
             )
   print("Added")
-  Sys.sleep(60) #1 min sleep time
+  Sys.sleep(360) #1 min sleep time
 }
 
